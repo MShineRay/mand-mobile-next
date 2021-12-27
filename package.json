@@ -31,12 +31,6 @@
     "test": "jest --coverage",
     "cz": "git commit"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "prepare-commit-msg": "exec < /dev/tty && npx git-cz --hook"
-    }
-  },
   "lint-staged": {
     "**/*.{js,ts,vue}": [
       "eslint --fix"
@@ -98,6 +92,8 @@
     "husky": "4",
     "jest": "^26.6.3",
     "klaw-sync": "^6.0.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
     "lint-staged": "10",
     "plop": "^2.7.4",
     "postcss": "^8.2.15",
